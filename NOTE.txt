@@ -1,0 +1,3 @@
+QUANDO USARE SERVER COMPONETN / CLIENT COMPONENT
+Continua ad usare server component finché non ci sono problemi poi vedi
+https://nextjs.org/docs/app/building-your-application/rendering/composition-patterns#when-to-use-server-and-client-components
