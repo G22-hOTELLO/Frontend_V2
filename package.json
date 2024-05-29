@@ -1,24 +1,31 @@
 {
-  "name": "hotellov2",
+  "name": "hotello",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
   "dependencies": {
-    "bcrypt": "^5.1.1",
-    "mongodb": "^6.5.0",
-    "mongoose": "^8.3.1",
-    "next": "14.1.4",
-    "react": "^18",
-    "react-dom": "^18"
+    "next": "^14.1.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
+    "@chakra-ui/react": "^2.2.6",
+    "framer-motion": "^7.1.0",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@emotion/cache": "^11.11.0",
+    "@chakra-ui/icons": "^2.0.8",
+    "antd": "^4.17.4",
+    "@ant-design/icons": "^4.7.0",
+    "prop-types": "^15.8.1"
   },
   "devDependencies": {
-    "autoprefixer": "^10.0.1",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.3"
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export -o build/",
+    "start": "next start",
+    "lint": "next lint"
   }
 }
