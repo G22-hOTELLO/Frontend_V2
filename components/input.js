@@ -20,7 +20,7 @@ const Input = ({ className = "" }) => {
         <img
           className="w-[9.063rem] relative rounded-12xs h-[3.813rem] z-[0]"
           alt=""
-          src="/rectangle-1090.svg"
+          src="/rectangle-10901.svg"
         />
         <b className="w-full absolute !m-[0] h-[121.15%] top-[0.79%] left-[0%] text-[1.563rem] flex font-montserrat text-white text-center items-center justify-center z-[1]">
           Invia

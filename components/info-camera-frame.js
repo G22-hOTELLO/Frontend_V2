@@ -179,7 +179,7 @@ const InfoCameraFrame = ({
           <img
             className="w-[48.8px] relative h-[50px]"
             alt=""
-            src="/vector.svg"
+            src="/vector1.svg"
             style={vectorIconStyle}
           />
           <div

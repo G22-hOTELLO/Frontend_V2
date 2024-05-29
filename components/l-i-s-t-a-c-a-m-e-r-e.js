@@ -15,9 +15,9 @@ const LISTACAMERE = ({ className = "" }) => {
       className={`self-stretch flex flex-col items-center justify-center py-[0rem] px-[6.25rem] ${className}`}
     >
       <InfoCameraFrame
-        caroselloImmagini="/carosello-immagini@2x.png"
-        vector="/vector1.svg"
-        bed="/bed.svg"
+        caroselloImmagini="/carosello-immagini2@2x.png"
+        vector="/vector11.svg"
+        bed="/bed2.svg"
         property1DefaultPadding="0.25rem"
         infoPadding="0.625rem 1.875rem"
         infoGap="1.875rem"

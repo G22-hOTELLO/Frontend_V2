@@ -2,7 +2,6 @@ import { useState, useCallback } from "react";
 import Login from "./login";
 import PortalPopup from "./portal-popup";
 import NotificaMail from "./notifica-mail";
-import CloseRing from "./close-ring";
 import PropTypes from "prop-types";
 
 const Registrazione = ({ className = "", onClose }) => {
@@ -66,24 +65,22 @@ const Registrazione = ({ className = "", onClose }) => {
             Registrati
           </button>
         </button>
-        <CloseRing
-          vector112="/vector-112.svg"
-          vector113="/vector-113.svg"
-          propLeft="846px"
-          propWidth="95px"
-          propHeight="85px"
-          propWidth1="25.05%"
-          propHeight1="25.06%"
-          propRight="37.47%"
-          propBottom="37.41%"
-          propLeft1="37.47%"
-          propWidth2="25.05%"
-          propHeight2="25.06%"
-          propRight1="37.47%"
-          propBottom1="37.41%"
-          propLeft2="37.47%"
-          onClose={onClose}
-        />
+        <button
+          className="cursor-pointer [border:none] py-[11px] px-3 bg-[transparent] absolute top-[42px] left-[846px] w-[95px] h-[85px] flex flex-col items-start justify-start box-border gap-[10px]"
+          onClick={onClose}
+        >
+          <div className="w-[75.5px] relative rounded-[50%] box-border h-[68.8px] z-[0] border-[5px] border-solid border-darkslategray-200" />
+          <img
+            className="w-[25.05%] absolute !m-[0] h-[25.06%] top-[37.53%] right-[37.47%] bottom-[37.41%] left-[37.47%] max-w-full overflow-hidden max-h-full z-[1]"
+            alt=""
+            src="/vector-112.svg"
+          />
+          <img
+            className="w-[25.05%] absolute !m-[0] h-[25.06%] top-[37.53%] right-[37.47%] bottom-[37.41%] left-[37.47%] max-w-full overflow-hidden max-h-full object-contain z-[2]"
+            alt=""
+            src="/vector-113.svg"
+          />
+        </button>
         <div className="absolute top-[207px] left-[154px] w-[692px] h-[71px]">
           <div className="absolute h-[97.46%] w-full top-[2.54%] right-[0%] bottom-[0%] left-[0%] rounded-mini bg-gainsboro-100" />
           <img

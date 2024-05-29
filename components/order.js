@@ -47,7 +47,7 @@ const Order = ({
       <img
         className="absolute h-[46.44%] w-[9.14%] top-[26.78%] right-[80.98%] bottom-[26.78%] left-[9.88%] max-w-full overflow-hidden max-h-full"
         alt=""
-        src="/vector3.svg"
+        src="/vector31.svg"
       />
       <div className="absolute h-full w-[79.17%] top-[0%] left-[14.58%] font-semibold flex items-center justify-center">
         Consigliato

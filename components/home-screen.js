@@ -19,7 +19,7 @@ const HomeScreen = ({ className = "", frame5AlignContent }) => {
   }, [router]);
 
   const onAreaPersonaleTextClick = useCallback(() => {
-    router.push("/area-personale");
+    router.push("/");
   }, [router]);
 
   const openLoginPopup = useCallback(() => {
@@ -84,7 +84,7 @@ const HomeScreen = ({ className = "", frame5AlignContent }) => {
           <img
             className="w-[48.688rem] relative h-[24.375rem] object-cover"
             alt=""
-            src="/hotel-california@2x.png"
+            src="/hotel-california1@2x.png"
           />
           <div className="flex flex-row items-center justify-start gap-[6.25rem]">
             <button

@@ -2,7 +2,6 @@ import { useState, useCallback } from "react";
 import PrimoLogin from "./primo-login";
 import PortalPopup from "./portal-popup";
 import Registrazione from "./registrazione";
-import CloseRing from "./close-ring";
 import PropTypes from "prop-types";
 
 const Login = ({ className = "", onClose }) => {
@@ -74,11 +73,22 @@ const Login = ({ className = "", onClose }) => {
             Accedi
           </div>
         </button>
-        <CloseRing
-          vector112="/vector-1121.svg"
-          vector113="/vector-1131.svg"
-          onClose={onClose}
-        />
+        <button
+          className="cursor-pointer [border:none] py-[11px] px-3 bg-[transparent] absolute top-[43px] left-[864px] flex flex-col items-start justify-start gap-[10px]"
+          onClick={onClose}
+        >
+          <div className="w-[75.5px] relative rounded-[50%] box-border h-[68.8px] z-[0] border-[5px] border-solid border-darkslategray-200" />
+          <img
+            className="w-[24.97%] absolute !m-[0] h-[24.94%] top-[37.53%] right-[37.57%] bottom-[37.53%] left-[37.46%] max-w-full overflow-hidden max-h-full z-[1]"
+            alt=""
+            src="/vector-1121.svg"
+          />
+          <img
+            className="w-[24.97%] absolute !m-[0] h-[24.94%] top-[37.53%] right-[37.57%] bottom-[37.53%] left-[37.46%] max-w-full overflow-hidden max-h-full object-contain z-[2]"
+            alt=""
+            src="/vector-1131.svg"
+          />
+        </button>
         <div className="absolute top-[246px] left-[158px] w-[707px] h-[78px]">
           <div className="absolute h-[97.44%] w-full top-[2.56%] right-[0%] bottom-[0%] left-[0%] rounded-mini bg-gainsboro-100" />
           <input

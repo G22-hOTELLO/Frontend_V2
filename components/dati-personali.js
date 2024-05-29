@@ -1,4 +1,20 @@
-const DatiPersonali = ({ className = "" }) => {
+import { useMemo } from "react";
+
+const DatiPersonali = ({
+  className = "",
+  nomeRequired,
+  cognomeRequired,
+  dataDiNascitaRequired,
+  telefonoRequired,
+  emailRequired,
+  dataDiNascitaTextDecorationColor,
+}) => {
+  const dataDiNascitaStyle = useMemo(() => {
+    return {
+      textDecorationColor: dataDiNascitaTextDecorationColor,
+    };
+  }, [dataDiNascitaTextDecorationColor]);
+
   return (
     <section
       className={`self-stretch h-[76.563rem] flex flex-col items-center justify-center relative gap-[0.625rem] z-[2] text-center text-[4rem] text-navy-100 font-montserrat ${className}`}
@@ -46,6 +62,7 @@ const DatiPersonali = ({ className = "" }) => {
             className="[border:none] [outline:none] font-medium font-montserrat text-[2rem] bg-[transparent] absolute h-full w-[86.56%] top-[0%] left-[11.46%] text-darkslategray-100 text-left flex items-center"
             placeholder="Nome"
             type="text"
+            required={nomeRequired}
           />
         </div>
         <div className="w-[57.75rem] relative h-[6.456rem]">
@@ -59,6 +76,7 @@ const DatiPersonali = ({ className = "" }) => {
             className="[border:none] [outline:none] font-medium font-montserrat text-[2rem] bg-[transparent] absolute h-full w-[86.56%] top-[0%] left-[11.46%] text-darkslategray-100 text-left flex items-center"
             placeholder="Cognome"
             type="text"
+            required={cognomeRequired}
           />
         </div>
         <div className="w-[57.75rem] relative h-[6.456rem]">
@@ -72,6 +90,8 @@ const DatiPersonali = ({ className = "" }) => {
             className="[border:none] [outline:none] font-medium font-montserrat text-[2rem] bg-[transparent] absolute h-full w-[86.56%] top-[0%] left-[11.46%] text-darkslategray-100 text-left flex items-center"
             placeholder="Data di nascita"
             type="date"
+            required={dataDiNascitaRequired}
+            style={dataDiNascitaStyle}
           />
         </div>
         <div className="w-[57.75rem] relative h-[6.456rem]">
@@ -85,6 +105,7 @@ const DatiPersonali = ({ className = "" }) => {
             className="[border:none] [outline:none] font-medium font-montserrat text-[2rem] bg-[transparent] absolute h-full w-[86.56%] top-[0%] left-[11.46%] text-darkslategray-100 text-left flex items-center"
             placeholder="Telefono"
             type="tel"
+            required={telefonoRequired}
           />
         </div>
         <div className="w-[57.75rem] relative h-[6.544rem]">
@@ -93,6 +114,7 @@ const DatiPersonali = ({ className = "" }) => {
             className="[border:none] [outline:none] font-medium font-montserrat text-[2rem] bg-[transparent] absolute h-full w-[86.56%] top-[0%] left-[11.46%] text-darkslategray-100 text-left flex items-center"
             placeholder="Email"
             type="email"
+            required={emailRequired}
           />
           <img
             className="absolute h-[68.48%] w-[7.07%] top-[16.71%] right-[91.8%] bottom-[14.8%] left-[1.14%] max-w-full overflow-hidden max-h-full"
@@ -111,6 +133,14 @@ const DatiPersonali = ({ className = "" }) => {
 
 DatiPersonali.propTypes = {
   className: PropTypes.string,
+  nomeRequired: PropTypes.bool,
+  cognomeRequired: PropTypes.bool,
+  dataDiNascitaRequired: PropTypes.bool,
+  telefonoRequired: PropTypes.bool,
+  emailRequired: PropTypes.bool,
+
+  /** Style props */
+  dataDiNascitaTextDecorationColor: PropTypes.any,
 };
 
 export default DatiPersonali;

@@ -22,7 +22,7 @@ const HomeScreen1 = ({ className = "" }) => {
   }, [router]);
 
   const onAreaPersonaleTextClick = useCallback(() => {
-    router.push("/area-personale");
+    router.push("/");
   }, [router]);
 
   return (
@@ -44,7 +44,7 @@ const HomeScreen1 = ({ className = "" }) => {
           <img
             className="absolute h-full top-[0%] right-[0rem] bottom-[0%] rounded-12xs max-h-full w-[22.938rem]"
             alt=""
-            src="/rectangle-10901.svg"
+            src="/rectangle-109011.svg"
           />
           <img
             className="absolute h-[48.31%] w-[21.25%] top-[26.35%] right-[71.66%] bottom-[25.34%] left-[7.08%] max-w-full overflow-hidden max-h-full"
